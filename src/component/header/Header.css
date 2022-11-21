@@ -1,0 +1,37 @@
+.navbar {
+  min-width: 100%;
+  height: 65px;
+  min-height: 55px;
+  overflow: hidden;
+  box-shadow: 0px 0px 8px 2px grey;
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+}
+
+.navbar div img {
+  float: left;
+  width: 235px;
+  height: 75px;
+  display: block;
+  margin-left: 30px;
+  margin-top: -6px;
+}
+
+.navbar div .logoutImg {
+  opacity: 0.6;
+  width: 35px;
+  height: 30px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 315px) {
+  .navbar div img {
+    width: 110px;
+    height: 20px;
+    margin-left: 10px;
+  }
+}

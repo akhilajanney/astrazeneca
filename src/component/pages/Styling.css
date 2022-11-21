@@ -1,0 +1,798 @@
+@font-face {
+  font-family: Roboto-Black;
+  src: url("../../fonts/Roboto-Black.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("../../fonts/Roboto-Medium.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../../fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Thin;
+  src: url("../../fonts/Roboto-Thin.ttf");
+}
+
+/* Grid system for dividing the page into multiple
+It takes the complete width of the screen */
+div {
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  display: table;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.row {
+  height: fit-content;
+  border: none;
+  display: table;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Divides the page into two sectons, vertically */
+.col-2 {
+  width: 50%;
+  display: inline-block;
+}
+
+/* Divides the page into three sectons, vertically */
+.col-3 {
+  width: 33.33%;
+  display: inline-block;
+}
+
+/* Divides the page into four sections, vertically */
+.col-4 {
+  width: 25%;
+  display: inline-block;
+}
+
+.col-5 {
+  width: 20%;
+  display: inline-block;
+}
+
+.col-6 {
+  width: 100px;
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 10px 10px 10px 0px;
+  text-align: center;
+}
+
+/* Creates a column which covers 3/4 th section of the page, vertically */
+.col-34 {
+  width: 66.66%;
+  display: inline-block;
+}
+
+.panel {
+  width: 95%;
+  margin-top: 55px;
+  margin-left: 55px;
+  padding: 40px 40px 0px 40px;
+}
+
+/* Property for the heading */
+.main-heading {
+  /* font-size: 3vw; */
+  font-size: 41px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Roboto-Black;
+}
+
+.heading {
+  /* font-size: 1.9vw; */
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Roboto-Medium;
+  color: rgb(80, 79, 79);
+}
+
+.sub-heading {
+  font-size: 22px;
+  text-transform: capitalize;
+  font-family: Roboto-Medium;
+  color: rgb(80, 79, 79);
+}
+
+/* Defines property for the clickable button */
+.btn {
+  width: fit-content;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.25);
+}
+
+/* Property for button indicating success */
+.success-btn {
+  /* background-color: #08a88d; */
+  background-color: #006287;
+}
+
+/* Property for button indicating warning */
+.warning-btn {
+  background-color: #eb6565;
+}
+
+.update-btn {
+  background-color: #cf8b0f;
+}
+
+/* Apply shadow for the button on mouse over */
+.btn:hover {
+  box-shadow: 1px 1px 4px 1px grey;
+}
+
+/* styling property for messages */
+.msg {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.error-msg {
+  color: red;
+  margin: 0px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.success-msg {
+  color: green;
+  margin: 0px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+#lastupdated {
+  float: right;
+  font-size: 18px;
+  display: block;
+  margin-right: 55px;
+  margin-top: 18px;
+}
+
+/* Styling properties for the table */
+table {
+  border-collapse: collapse;
+  width: max-content;
+  width: 100%;
+  margin: 10px 0px;
+  /* box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.25),
+    -12px -12px 16px 0 rgba(0, 0, 0, 0.03); */
+}
+
+th,
+td {
+  padding: 5px 0px;
+  text-align: center;
+  font-family: Roboto-Regular;
+}
+
+th {
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+
+td {
+  font-size: 1.1vw;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+tr th {
+  background-color: darkgray;
+}
+
+.table-border-bottom tr {
+  border-bottom: 1px solid black;
+}
+
+/* Styling property for the form element */
+form {
+  margin: 10px 0px;
+}
+
+label {
+  font-size: 16px;
+  font-family: Roboto-Regular;
+}
+
+.label {
+  font-size: 16px;
+  font-family: Roboto-Regular;
+  float: left;
+  width: 200px;
+  padding: 7px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="file"],
+input[type="email"],
+input[type="tel"],
+select {
+  padding: 8px;
+  border: 0px;
+  border-bottom: 1px solid #ccc;
+  /* box-shadow: 1px 1px 6px 1px grey; */
+  box-shadow: 3px 3px 5px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  width: 250px;
+  font-size: 15px;
+  background: white;
+  color: black;
+}
+
+input[type="radio"] {
+  width: 15px;
+  height: 15px;
+}
+
+.small-input {
+  width: 180px;
+}
+
+.large-input {
+  width: 350px;
+}
+
+input::placeholder,
+select::placeholder {
+  font-size: 15px;
+  color: gray;
+}
+
+.input-group {
+  display: block;
+  padding: 5px 0px;
+}
+
+.right {
+  float: right;
+  margin-right: 10px;
+}
+
+.circle {
+  width: 0px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: black;
+}
+
+.circle-heighlight {
+  width: 0px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 0.5px solid gray;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.panic {
+  width: 0px;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgba(255, 0, 0);
+}
+
+.panic-heighlight {
+  width: 0px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 0.5px solid gray;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+.panicIcon {
+  color: rgba(255, 0, 0);
+}
+
+.circle-big {
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.square {
+  width: 0px;
+  padding: 5px;
+  background-color: black;
+}
+
+.square-big {
+  width: 0px;
+  padding: 15px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /*enablescroll if needed */
+  background-color: rgb(128, 128, 128, 0.5);
+  /*Background color*/
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 25%;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 4px lightgray;
+  padding: 20px;
+  overflow: auto;
+  font-size: 18px;
+}
+
+.btn-center {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Other properties defined here */
+#facilityW,
+#facilityH {
+  width: 10%;
+}
+
+.colorBlock {
+  width: 49.5%;
+  background-color: rgb(2, 167, 140, 0.2);
+  margin-right: 3px;
+  padding: 1%;
+  margin-top: 10px;
+}
+
+/* Animation effects */
+/* For fading the elements */
+.fading {
+  animation: fading 1.5s;
+}
+
+@keyframes fading {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* For blinking the tags on floor map on alert generation */
+.blink {
+  animation: blinker 0.5s linear infinite;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Responsive code */
+@media only screen and (max-width: 950px) {
+  .colorBlock {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 900px) {
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .colorBlock {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 550px) and (max-width: 700px) {
+  .col-4 {
+    width: 49%;
+  }
+
+  .col-3 {
+    width: 100%;
+  }
+
+  .colorBlock {
+    width: 100%;
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 150px) and (max-width: 549px) {
+  .col-4 {
+    width: 99%;
+  }
+
+  .col-3 {
+    width: 100%;
+  }
+
+  .colorBlock {
+    width: 100%;
+    display: table;
+  }
+}
+
+@media screen and (max-width: 557px) {
+
+  #facilityW,
+  #facilityH {
+    width: 250px;
+  }
+}
+
+
+
+/* Sensors Details Styles */
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 19%;
+  height: 100px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px 2px rgb(8 8 8 / 51%);
+}
+
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  text-align: center;
+}
+
+.card h2 {
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 22px;
+  font-family: Roboto-Regular;
+}
+
+.card p {
+  font-size: 22px;
+  margin-top: 15px;
+  color: #198ebb;
+  font-weight: 600;
+
+}
+
+.cardHeading {
+  font-size: 22px;
+  color: #000000b8;
+  font-weight: bold;
+  font-family: Roboto-Medium;
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.sensor_pdf_button {
+  min-width: 150px;
+  min-height: 45px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 30px;
+  color: #000;
+  background: #4FD1C5;
+  background: linear-gradient(90deg, rgb(134 188 242) 0%, rgb(79 102 209 / 82%) 100%);
+  border: none;
+  border-radius: 1000px;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+
+.sensor_pdf_button:hover,
+.sensor_pdf_button:focus {
+  color: #FFF;
+  transform: translateY(-6px);
+}
+
+.spinner {
+  width: 25%;
+  padding: 2%;
+  margin: -26vh;
+  margin-left: 75px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transform: translate(100%, -317%);
+  background-color: #d2cbcbe8;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 40px;
+  border-top: 8px solid #ff0000b8;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 1s linear infinite;
+  /* Safari */
+  animation: spin 1s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* common table  */
+.table_det th,
+td {
+  padding: 5px 0px;
+  text-align: center;
+  font-family: Poppins-Regular;
+}
+
+.table_det th {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.table_det td {
+  font-size: 16px;
+  color: black;
+}
+
+.table_det tr th {
+  border-bottom: 1px solid #ffeaea;
+  /* color: #00629b; */
+  color: black;
+  font-family: Poppins-Regular;
+}
+
+.table_det tr {
+  border-bottom: 1px solid rgb(144 218 255 / 19%);
+}
+
+/* pagination  */
+.pagination {
+  margin: 20px 20px;
+  padding: 10px;
+  border: 1px solid #e3bebe;
+  float: right;
+  border-radius: 5px;
+  margin-right: 5%;
+}
+
+.moving {
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 5px 12px;
+  border: none;
+  cursor: pointer;
+}
+
+/*ststus division */
+#outer_red {
+  margin: auto;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border: 2px solid red;
+  border-radius: 50%;
+}
+
+#inner_red {
+  top: 2px;
+  left: 2px;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 50%;
+}
+
+#outer_green {
+  margin: auto;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #23c106;
+  border-radius: 50%;
+}
+
+#inner_green {
+  top: 1px;
+  left: 2px;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #23c106;
+  border-radius: 50%;
+}
+
+/* --------------- */
+.frame {
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #e1e1e1c9;
+  box-shadow: -7px -7px 20px 0px #d7d7d7, -4px -4px 5px 0px #d7d7d7,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001, inset 0px 0px 0px 0px #d4d4d4,
+    inset 0px 0px 0px 0px #0001, inset 0px 0px 0px 0px #d7d7d7,
+    inset 0px 0px 0px 0px #0001;
+  transition: box-shadow 0.6s cubic-bezier(0.79, 0.21, 0.06, 0.81);
+}
+
+
+/* energy cards */
+
+.ecard {
+  padding: 1px;
+  text-align: center;
+  width: 230px;
+  height: 90px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 4px 2px rgb(8 8 8 / 51%);
+  margin-bottom: 15px;
+}
+
+.ecard h2 {
+  color: gray;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 22px;
+  font-family: Roboto-Regular;
+}
+
+.ecard p {
+  font-size: 22px;
+  margin-top: 15px;
+  color: #198ebb;
+  font-weight: 600;
+
+}
+
+.egraph_div {
+  width: 700px;
+  height: 400px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 4px 2px rgb(8 8 8 / 51%);
+}
+
+#egraphname {
+  text-transform: capitalize;
+  color: #198ebb;
+  font-weight: 600;
+  font-size: 22px;
+  padding: 25px;
+  margin: 10px 25px;
+}
+
+/* ===========Car Parking============ */
+
+.carpark-color {
+  display: flex;
+  align-items: center;
+  font-family: Roboto-Regular;
+}
+
+.carpark-color-text {
+  width: 13px;
+  height: 13px;
+  margin-right: 7px;
+  border-radius: 4px;
+}
+
+.car-container {
+  display: flex;
+  width: 90%;
+  height: 65vh;
+  border: 2px solid gray;
+  border-radius: 7px;
+  padding: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.car-block {
+  display: flex;
+  position: relative;
+  width: 460px;
+  height: 400px;
+  border-radius: 7px;
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.car-block-data {
+  position: absolute;
+  top: 10px;
+  font-family: Roboto-Regular;
+  font-size: 14px;
+  font-weight: 600;
+  color: #00629b;
+}
+
+.car-lastseen {
+  font-family: Roboto-Regular;
+}
