@@ -129,6 +129,7 @@ export const floorMap = async () => {
         .catch((error) => {
             if (error.response.status === 403) {
                 $("#displayModal").css("display", "block");
+                $("#content").text("User Session Timed Out.Please Login Again!")
             } else if (error.response.status === 400) {
                 floor = { error: true, message: "Bad Request!", floorData: [] }
                 this.setState({ error: true, message: 'Bad Request!' });

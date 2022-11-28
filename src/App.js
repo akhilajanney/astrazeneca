@@ -27,6 +27,7 @@ import Floorzonedet from './component/pages/Floorzonedet';
 import Energytag from './component/pages/Energytag';
 import Passiveasset from './component/pages/Passiveasset';
 import CarParking from './component/pages/CarParking';
+import Foodwaste from './component/pages/Foodwaste';
 
 class App extends Component {
   constructor() {
@@ -155,6 +156,16 @@ class App extends Component {
                 <CarParking {...props} handleLogin={this.handleUserLogin}></CarParking>
               )}
             />
+            <Route
+            exact
+            path="/wastage"
+            render={(props) => (
+              <Foodwaste
+                {...props}
+                handleLogin={this.handleUserLogin}
+              ></Foodwaste>
+            )}
+          />
             <Route
               exact
               path="/airquality"

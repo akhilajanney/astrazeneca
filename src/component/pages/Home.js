@@ -103,6 +103,16 @@ class Home extends Component {
                   />
                 </Link>
               </div>
+              <div className="col-4">
+              <Link to="/wastage">
+                <img
+                  alt=""
+                  src="../images/Widgets/Widget_FoodWastage.png"
+                  style={ImageSize}
+                  className="fading"
+                />
+              </Link>
+            </div>
             </div>
 
             <br></br>
@@ -147,7 +157,6 @@ class Home extends Component {
                   src="../images/Widgets/Widget_Parking.png"
                   style={ImageSize}
                   className="fading"
-                  onClick={() => linkClicked(2)}
                 />
               </Link>
             </div>
@@ -166,7 +175,6 @@ class Home extends Component {
                 src="../images/Widgets/Widget_Passivetag.png"
                 style={ImageSize}
                 className="fading"
-                onClick={() => linkClicked(2)}
               />
             </Link>
           </div>
